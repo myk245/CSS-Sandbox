@@ -9,61 +9,54 @@
    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
    <style>
       * {
-         /* 
-        -May want to add "border-box for "box-sizing so padding does not affect width
-        -Reset margin and padding 
-       */
+         box-sizing: border-box;
+         margin: 0; 
+         padding: 0; 
       }
 
       body {
-         /* 
-          -Background color is #344a72
-        */
+         background: #344a72;
+         font-family: "Raleway";
+         font-size: 18px;
+         line-height: 2.0em;  
       }
 
       a {
-         /* 
-        Underlined links are ugly :)
-       */
+         text-decoration: none;
+         color: #000; 
       }
 
       #container {
-         /* 
-        -Remember, margin: auto on left and right will center a block element 
-        -I would also set a "max-width" for responsiveness
-        -May want to add some padding
-        */
+         display: block;
+         margin: auto; 
+         max-width: 500px; 
+         padding: 50px; 
       }
 
       .form-wrap {
-         /* 
-          This is the white area around the form and heading, etc
-        */
+         border: 1px #333 solid; 
+         border-radius: 5px;
+         background-color: #fff;
       }
 
       .form-wrap h1,
       .form-wrap p {
-         /* 
-          May want to center these
-        */
+         text-align: center; 
       }
 
       .form-wrap .form-group {
-         /* 
-          Each label, input is wrapped in .form-group
-        */
+         padding-left: 10px;
+         padding-right: 10px; 
       }
 
       .form-wrap .form-group label {
-         /* 
-          Label should be turned into a block element
-        */
+         display: block; 
+         color: #615f5f; 
       }
 
       .form-wrap .form-group input {
-         /* 
-          Inputs should reach accross the .form-wrap 100% and have some padding
-        */
+         width: 100%;
+         height: 30px; 
       }
 
       .form-wrap button {
