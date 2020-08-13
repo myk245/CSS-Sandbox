@@ -59,7 +59,20 @@
             display: block; 
          }
       }
+
+      /* Landscape */
+      @media(max-height: 500px) {
+         body {
+            background: orange;  
+         }
+
+         #landscape h1 {
+            display: block; 
+         }
+      }
    </style>
+   <!-- we can also have a separate stylesheet for media queries if we wanted -->
+   <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css"> -->
 </head>
 
 <body>
