@@ -21,14 +21,25 @@
          padding: 10px;
          text-align: center;
          border-radius: 10px;
-         flex: 1;
+         /* flex: 1; */
       }
 
       .flex-container {
          display: flex;
          flex-direction: row; 
+         /* main axis align */
+         justify-content: center; 
          /* cross axis align */
          align-items: center; 
+         height: 50vh; 
+      }
+
+      .item-1 {
+         align-self: flex-start; 
+      }
+
+      .item-3 {
+         align-self: flex-end; 
       }
    </style>
 </head>
