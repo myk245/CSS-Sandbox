@@ -6,24 +6,33 @@
    <title>Keyframe Animation</title>
    <style>
       body {
-         background: #333; 
+         background: lightpink; 
       }
 
       .box {
          background: white; 
          width: 200px; 
          height: 200px; 
-         animation-name: animate1; 
+         position: relative;
+         /* animation-name: animate1; 
          animation-duration: 5s; 
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+         animation-delay: 2s;
+         animation-direction: alternate-reverse;
+         animation-timing-function: ease-in;  */
+         animation: animate1 5s forwards 1s ease-in-out;
       }
 
       @keyframes animate1 {
-         /* from {
-            width: 200px; 
-         } */
+         from {
+            top: 0; 
+         }
 
          to {
             width: 600px;
+            background-color: lightyellow;
+            top: 300px; 
          }
       }
    </style>
